@@ -1,0 +1,111 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.skills{
+  display: flex;
+  
+  justify-content:center;
+  flex-wrap: wrap;
+  
+  box-sizing: border-box;
+  height: 80%;
+}
+.skills::-webkit-scrollbar {
+  width: 8px; 
+  border-radius: 10px;
+}
+
+.skills::-webkit-scrollbar-track {
+  background: #f1f1f196; 
+  border-radius: 10px;
+}
+
+.skills::-webkit-scrollbar-thumb {
+  background: #c889ff; 
+  border-radius: 10px;
+}
+
+.skills::-webkit-scrollbar-thumb:hover {
+  background: #b610df; 
+  border-radius: 10px;
+}
+.contain{
+    display: flex;
+    width: 25%;
+    padding-top: 30px;
+    row-gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+.circular-progress{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px #00ffff7f, 0 0 20px #00ffff7f, 0 0 20px #00ffff7f, 0 0 20px #00ffff7f;
+    
+}
+.p1{
+  background: conic-gradient(#7d2ae8 306deg, #ededed 0deg);
+}
+.p2{
+  background: conic-gradient(#7d2ae8 162deg, #ededed 0deg);
+}
+.p3{
+  background: conic-gradient(#7d2ae8 252deg, #ededed 0deg);
+}
+.p4{
+  background: conic-gradient(#7d2ae8 288deg, #ededed 0deg);
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: #fff;
+    
+}
+.progress-value{
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    color: #7d2ae8;
+    
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: 500;
+    color: #7d2ae8;
+    text-align: center;
+    width: 100% !important;
+}
+@media(max-width: 940px){
+  .skills{
+    overflow-y: scroll !important;  
+  }
+  .contain{
+      width: 40%;
+  }
+
+
+}
+@media(max-width: 790px){
+  .skills{
+    overflow-y: scroll !important;  
+  }
+  .contain{
+      width: 80%;
+  }
+
+
+}

@@ -1,0 +1,25 @@
+.info2{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: 65%;
+    background-image: url('../styles/img/chica.png');
+    background-size: cover;
+    align-items: center;
+    margin: auto;
+   
+    
+}   
+.W, .G, .C{
+    font-size: 80px;
+    color:#41f5ff;
+    cursor: pointer;
+    padding: 9%;
+    box-shadow: #41f5ff;
+    opacity: 1 !important;
+
+
+}
+.W{
+    padding-left: 8%;
+}

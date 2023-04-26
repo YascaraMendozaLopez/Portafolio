@@ -1,0 +1,194 @@
+:root {
+    --animate-duration: 5s;
+    --animate-delay: 2s;
+    
+  }
+
+.about{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.info{
+    padding-top: 20px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infoR{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    width: 40%;
+    height: 300px;
+    
+}
+.info2{
+    
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-image: url('../styles/img/chica.png');
+    background-size: cover;
+    align-items: center;
+    border-radius: 10%;
+    
+}     
+
+.W, .G, .C{
+    font-size: 80px;
+    color:#41f5ff;
+    cursor: pointer;
+    padding: 15px;
+    box-shadow: #41f5ff;
+    opacity: 1 !important;
+
+
+}
+.W{
+    padding-left: 20px;
+}
+
+
+
+
+
+p{
+    width: 100%;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom:10px ;
+    font-family: monospace;
+    font-size: calc(8px + 0.6vw);
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    
+}
+.info span{
+    color: #fff;
+    animation: blink 1s infinite;
+    font-size: calc(8px + 1vw) ;
+}
+
+#p1{
+    animation: escribir 2s steps(40,end);
+    
+} 
+#p2{
+    animation: vista 1.5s steps(1),escribir 2s steps(40, end) 1.5s;   
+}
+#p3{
+    
+    animation: vista 2.3s steps(1),escribir 2s steps(40, end) 2.3s;
+}
+#p4{
+    animation: vista 2.8s steps(1),escribir 2s steps(40, end) 2.8s;
+    
+}
+#p5{
+    
+    animation: vista  3.7s steps(1),escribir 2s steps(40, end)  3.7s;
+}
+#p6{
+    animation: vista  4.5s steps(1),escribir 2s steps(40, end)  4.5s;   
+}
+#p7{
+    
+    animation: vista  5.3s steps(1),escribir 2s steps(40, end)  5.3s;
+}
+#p8{
+    animation: vista  6.1s steps(1),escribir 2s steps(40, end)  6.1s;
+    
+}
+#p9{
+    animation: vista  6.9s steps(1),escribir 2s steps(40, end)  6.9s;
+}
+#p10{
+    
+    animation: vista  7.7s steps(1),escribir 2s steps(40, end)  7.7s;
+}
+#p11{
+    animation: vista  8.5s steps(1),escribir 2s steps(40, end)  8.5s;   
+}
+#p12{
+    
+    animation: vista  9.3s steps(1),escribir 2s steps(40, end)  9.3s;
+}
+#p13{
+    animation: vista  10.1s steps(1),escribir 2s steps(40, end)  10.1s;
+    
+}
+#p14{
+    animation: vista  10.9s steps(1),escribir 2s steps(40, end)  10.9s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes escribir {
+    from {
+      width: 0;
+        
+    }
+    to {
+      width: 100%;
+    }
+
+  }
+  @keyframes vista {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+  }
+  @keyframes blink {
+    to{
+        opacity: .0;
+    }
+  }
+  
+
+
+  @media(max-width: 790px){
+    .info{
+        width: 80%;
+    }
+    .infoR{
+        width: 70%;
+        margin-top: 50px;
+        justify-content: space-evenly;
+        
+        height: 80px;
+    }
+    .foto{
+        width: 30%;
+        top:auto;
+        bottom: 70px !important;
+    }
+
+    .W, .G, .C{
+        font-size: 40px;
+    }
+
+}
+
